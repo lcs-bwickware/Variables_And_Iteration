@@ -2,5 +2,10 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/bwickware/Documents/Computer%20studies/Variables_And_Iteration/Variables_And_Iteration/Variables_And_Iteration.playground/Pages/Iteration.xcplaygroundpage#CharacterRangeLen=12&amp;CharacterRangeLoc=730&amp;EndingColumnNumber=0&amp;EndingLineNumber=17&amp;StartingColumnNumber=5&amp;StartingLineNumber=16&amp;Timestamp=529339238.834481"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

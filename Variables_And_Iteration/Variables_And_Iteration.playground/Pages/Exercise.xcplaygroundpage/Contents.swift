@@ -16,7 +16,27 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-//: ## Add your code below
+for x in stride(from: 0, through: 300, by: 25)  {
+    for y in stride(from: 0, through: 300, by: 25) {
+        canvas.drawEllipse(centreX: x, centreY: y, width: 2, height: 2)
+    }
+}
+canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 25, alpha: 90)
+canvas.drawRectangle(centreX: 0, centreY: 0, width: 1000, height: 250)
+
+canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 30, alpha: 100)
+canvas.drawRectangle(centreX: 0, centreY: 0, width: 1000, height: 100)
+
+//draw mountain peek
+canvas.fillColor = Color.black
+for i in 0...50 {
+    canvas.drawLine(fromX: i, fromY: 400, toX: 50+i, toY: 400-i)
+}
+
+
+
+
+
 
 
 
