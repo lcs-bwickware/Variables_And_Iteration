@@ -28,10 +28,13 @@ canvas.fillColor = Color.init(hue: 30, saturation: 0, brightness: 30, alpha: 100
 canvas.drawRectangle(centreX: 0, centreY: 0, width: 1000, height: 100)
 
 //draw mountain peek
-canvas.fillColor = Color.black
 for i in 0...50 {
-    canvas.drawLine(fromX: i, fromY: 400, toX: 50+i, toY: 400-i)
+    canvas.drawLine(fromX: i, fromY: 125, toX: 50+i, toY: 175-i)
+    canvas.drawLine(fromX: 100+i, fromY: 125, toX: 150+i, toY: 175-i)
+     canvas.drawLine(fromX: 200+i, fromY: 125, toX: 250+i, toY: 175-i)
+    
 }
+// draw lower mountains
 
 
 
@@ -40,8 +43,6 @@ for i in 0...50 {
 
 
 
-/*:
- ## Template code
- The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
- */
+
+
 PlaygroundPage.current.liveView = canvas.imageView
