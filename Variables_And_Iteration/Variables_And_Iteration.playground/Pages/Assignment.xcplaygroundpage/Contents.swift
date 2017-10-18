@@ -24,7 +24,10 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.drawShapesWithFill = false
 
 //Loop to set horizantal position
+
 for x in stride(from: 0, through: 500, by: 100) {
+    canvas.lineColor = Color(hue: 0, saturation: 80, brightness: x / 10, alpha: 100)
+    canvas.defaultLineWidth = x / 40
     
  canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 500)
 }
@@ -32,12 +35,26 @@ for x in stride(from: 0, through: 500, by: 100) {
 // Loop to set vertical position
 for y in stride(from: 450, through: 0, by: -100) {
     
+     canvas.defaultLineWidth = y / 40
     
     canvas.drawLine(fromX: 0, fromY: 0, toX: 500, toY: y)
 }
 
-// dosecond set of lines
-for 
+for p in stride(from: 500, through: 0, by: -100) {
+    canvas.lineColor = Color(hue: 0, saturation: 80, brightness: p / 10, alpha: 100)
+    canvas.defaultLineWidth = p / 40
+    
+    canvas.drawLine(fromX: 500, fromY: 0, toX: p, toY: 500)
+}
+
+// Loop to set vertical position
+for s in stride(from: 0, through: 0, by: 100) {
+    
+    canvas.defaultLineWidth = s / 40
+    
+    canvas.drawLine(fromX: 500, fromY: 0, toX: 500, toY: s)
+}
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
