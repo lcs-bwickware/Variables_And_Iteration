@@ -18,10 +18,26 @@ import PlaygroundSupport
 //: ## Add your code below
 
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
-// Below this line, try combining a loop and four statements that draw lines to generate the goal
+// No fill
+canvas.drawShapesWithFill = false
 
+//Loop to set horizantal position
+for x in stride(from: 0, through: 500, by: 100) {
+    
+ canvas.drawLine(fromX: 0, fromY: 0, toX: x, toY: 500)
+}
+
+// Loop to set vertical position
+for y in stride(from: 450, through: 0, by: -100) {
+    
+    
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 500, toY: y)
+}
+
+// dosecond set of lines
+for 
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
